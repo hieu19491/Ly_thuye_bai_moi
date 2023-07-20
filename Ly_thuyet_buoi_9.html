@@ -1,0 +1,48 @@
+*/
+Khái niệm vòng lặp:
+Vòng lặp dùng để thực thi một hành động lặp đi lặp lại. Bên cạnh đó,
+các bài toán từ đơn giản đến phức tạp, không bài nào là không bắt gặp vòng lặp.
+
+- Vòng lặp for:
+  + Cú pháp:
+      for ({khởi tạo biến cho vòng lặp}; {điều kiện để vòng lặp thực hiện}; {tăng giá trị biến chạy lên 1 mỗi khi thực hiện xong hành động}
+      {
+        // do something
+      }
+  + Ví dụ:
+    for (let a = 2; a < 10; a++)
+    {
+      console.log(a);
+    }
+
+- Lệnh break:
+  break được dùng để kết thúc vòng lặp, hoặc cấu trúc switch case, đúng như ý nghĩa của nó break nó
+  dùng để phá vỡ vòng lặp hoặc cấu trúc switch case.
+
+  + Ví dụ:
+    for(let i = 1; i =< 10; i ++) // khởi tạo một vòng lặp for và cho nó lặp 10 lần
+    {
+        console.log(i);
+        if (i == 4)
+        {
+            console.log("Stop !!!");
+            break; // sử dụng lệnh break khi i = 4
+        }
+    }
+    //output: 1 2 3 4 Stop!!!
+
+- lệnh continue:
+  Khác hoàn toàn với lệnh break, lệnh continue trong javascript có tác dụng bỏ qua một bước lặp nào đó,
+  nghĩa là lúc gặp lệnh continue thì tất cả những đoạn code nằm bên dưới sẽ không được thực hiện mà nó
+  sẽ nhảy qua vòng lặp mới luôn.
+
+  + Ví dụ:
+    for (let i = 1; i <= 10; i ++) // khởi tạo một vòng lặp for và cho nó lặp 10 lần
+    {
+      if (i == 4){
+        continue; // sử dụng lệnh break khi i = 4
+      }
+      console.log(i);
+    }
+    //output: 1 2 3 5 6 7 8 9 10
+

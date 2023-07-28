@@ -1,0 +1,33 @@
+Mảng đa chiều:
+•Mảng đa chiều là mảng có các phần tử là các mảng khác
+•Có thể có mảng 2 chiều, 3 chiều… hoặc nhiều hơn
+•Mảng càng nhiều chiều thì độ phức tạp khi xử lý càng cao
+
+Mảng 2 chiều:
+•Mảng hai chiều là mảng nhiều chiều được sử dụng phổ biến
+•Mảng hai chiều bao gồm các phần tử, mỗi phần tử là một
+mảng một chiều.
+•Mảng hai chiều là một bảng gồm n dòng và m cột
+
+Cách duyệt mảng 2 chiều:
+• Sử dụng vòng lặp lồng nhau để duyệt mảng đa chiều
+• Sử dụng 2 vòng lặp lồng nhau để duyệt mảng 2 chiều
+•Ví dụ:
+
+  for(let i = 0; i < arr.length; i++){
+    for(let j = 0; j < arr[i].length; i++){
+      document.write(arr[i] [j] + "<br>");
+    }
+  }
+
+Dùng mảng 2 chiều để tìm số lơn nhất
+Vd:
+VD: let num = [1, 4, 7, 9, 3];
+let max_val = num.reduce(function(accumulator, element){
+return (accumulator > element) ? accumulator : element
+});
+console.log(num);
+console.log("max= ",max_val);
+
+
+

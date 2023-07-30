@@ -1,0 +1,60 @@
+/*
+    HÀM LÀ GÌ:
+Hàm trong JavaScript là một chương trình con giúp thực thi một công việc cụ thể.
+Để định nghĩa hàm trong JavaScript,sử dụng từ khoá function với cú pháp là:
+
+function <tên hàm>(<tham số 1>,<tham số 2>){
+    <câu lệnh 1>;
+    <câu lệnh 2>;
+        ...
+}
+   Cách gọi hàm:
+        <tên hàm>(<tham số 1>,<tham số 2>)
+
+-Tham số:
+            • Tham số (còn được gọi đầy đủ là tham số hình thức – formal
+            parameter) là các biến được khai báo trong phần header
+            • Khi gọi hàm thì giá trị của các biến này sẽ được truyền vào. Các giá trị
+            này được gọi là tham số thực (actual parameter) hoặc đối số
+            (argument)
+-Đôi số:
+            Là giá trị mình muốn đưa vào hàm để thực hiện các câu lệnh muốn thực hiện trong hàm.
+
+-Return:
+            Dùng để gọi về giá trị kết quả của hàm mà không cần hiển thị kết quả.
+            Từ khóa return trong JavaScript có thể đặt ở bất kỳ đâu trong thân hàm.
+            Khi gặp từ khóa return, hàm sẽ dừng lại và trả về giá trị sau return.
+
+Hàm không tham số:
+
+            function show(){
+            let a = "Hello";
+            alert(a)
+            }
+            show()
+
+Hàm có tham số:
+            - Tạo hàm tinhTong(a, b) tính tổng 2 số và hiển thị ra màn hình
+
+            function sum(a, b){
+            let c = a + b;
+            alert(c)
+            }
+            sum(4,5)
+
+
+            -Tạo hàm tinhTong(a, b) tính tổng 2 số và return về tổng đó:
+
+            function show(a, b){
+            let c = a + b;
+            return c
+            }
+            let tong;
+            tong = show(4,5);
+            console.log(tong)
+
+
+
+
+
+
